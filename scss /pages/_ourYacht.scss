@@ -1,0 +1,8 @@
+.ourYachtText{
+   h1{
+      @include H1;
+   }
+   p{
+      @include P2;
+   }
+}

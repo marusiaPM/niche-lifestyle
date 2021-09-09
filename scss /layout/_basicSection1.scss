@@ -1,0 +1,50 @@
+.basicSection1Wrap{
+   .basic-heading{
+      h1{
+         @include H1;
+      }
+   }
+
+   .basic-links{
+      .line{
+         height: 25px;
+         border-left: 1px solid $teal;
+      }
+
+      p{
+         @include link1;
+         margin: 0 20px;
+         cursor: pointer;
+      }
+   }
+
+   .basic-headerText{
+      p{
+         @include P1;
+      }
+   }
+
+   .basic-img{
+      height: 100%;
+      width: 100%;
+
+      img{
+         display: block !important;
+         width: 100% !important;
+         height: 100% !important;
+         object-fit: cover !important;
+      }
+   }
+
+   .basic-text{
+      max-width: 900px;
+      h1{
+         @include H2;
+         text-align: left;
+      }
+
+      p{
+         @include P1;
+      }
+   }
+}

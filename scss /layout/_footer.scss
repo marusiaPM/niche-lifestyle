@@ -1,0 +1,195 @@
+.footerWrap{
+
+   .footer{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: linear-gradient(0deg, rgba(45, 45, 45, 0.9), rgba(45, 45, 45, 0.9)), url('../img/backgrounds/water.png');
+
+      .logo{
+         text-decoration: none;
+         img{
+            display: block;
+            width: 300px;
+         }
+      }
+
+      .footerLinks{
+         a{
+            text-decoration: none;
+            color: $wh;
+            @include F1500;
+            font-size: 1rem;
+            line-height: 1.187rem;
+            margin: 0 15px;
+            
+            &:hover{
+               color: $teal;
+            }
+         }
+      }
+
+      .footerContact{
+         p{
+            @include P1;
+            font-weight: 400;
+            color: $wh;
+            text-align: center;
+         }
+
+         &__email{
+            text-decoration: none;
+            @include P1;
+            font-weight: 400;
+            color: $wh;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+            display: block;
+         }
+
+         &__phone1{
+            margin: 20px 40px;
+         }
+
+         &__phone2{
+            margin: 20px 0px 20px 0px;
+         }
+      }
+
+      .footerAddress{
+         p{
+            @include P1;
+            font-weight: 400;
+            color: $wh;
+            text-align: center;
+         }
+      }
+
+      .footerSocials{
+         a{
+            display: block;
+            @include Flex2;
+            text-decoration: none;
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid $wh;
+            border-radius: 50%;
+
+            transition: all 0.5s ease;
+
+            &:not(:last-child){
+               margin-right: 40px;
+            }
+
+            i{
+               font-size: 1.3rem;
+               color: $wh;
+            }
+
+            &:hover{
+               border-color: $teal;
+               background-color: $teal;
+            }
+         }
+      }
+   }
+
+   .copyright{
+      background-color: $blk;
+
+      .copy{
+         p{
+            @include F2300;
+            font-size: 1rem;
+            color: $wh;
+            padding: 0;
+            margin: 0;
+         }
+      }
+
+      .terms{
+         a{
+            @include F2300;
+            font-size: 1rem;
+            color: $wh;
+            text-decoration: none;
+
+            &:not(:last-child){
+               margin-right: 1rem;
+            }
+         }
+
+      }
+   }
+}
+
+@media screen and (max-width: 800px){
+   .footerWrap{
+      .copyright{
+         .copy{
+            p{
+               text-align: center
+            }
+         }
+   
+         .terms{
+            @include Flex2;
+            a{
+               margin: 5px 10px;
+   
+               &:not(:last-child){
+                  margin: 0 10px;
+               }
+            }
+   
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 600px){
+   .footerWrap{
+      .footer{
+
+         .logo{
+            img{
+               display: block;
+               width: 200px;
+               margin: auto;
+            }
+         }
+         
+         .footerLinks{
+            a{
+               width: 100%;
+               text-align: center;
+
+               &:not(:last-child){
+                  margin-bottom: 30px;
+               }
+            }
+         }
+      }
+   
+      .copyright{
+         .copy{
+            p{
+               text-align: center
+            }
+         }
+   
+         .terms{
+            @include Flex2;
+            a{
+               margin: 5px 10px;
+   
+               &:not(:last-child){
+                  margin: 0 10px;
+               }
+            }
+   
+         }
+      }
+   }
+}
+

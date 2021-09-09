@@ -1,0 +1,58 @@
+.ui-datepicker{
+   
+   .ui-state-highlight{
+      border-color: $teal;
+      background-color: $teal-2;
+   }
+
+   .ui-state-active{
+      border-color: $teal;
+      background-color: $teal;
+   }
+
+   // ARROWS 
+   .ui-datepicker-next{
+      padding: 0 0 0 0;
+      span{
+         background-image: url('../img/icon/arrow_forward.svg') !important;
+         background-position: 0px 0px !important;
+         background-size: 16px 16px;
+      }
+   }
+
+   .ui-datepicker-next-hover{
+      padding: 0 0 0 0;
+      cursor: pointer;
+      background-color: none;
+      border: none;
+
+      span{
+         background-image: url('../img/icon/arrow_forward.svg') !important;
+         background-position: 0px 0px !important;
+         background-size: 16px 16px;
+      }
+   }
+
+   .ui-datepicker-prev{
+      padding: 0 0 0 0;
+      span{
+         background-image: url('../img/icon/arrow_back.svg') !important;
+         background-position: 0px 0px !important;
+         background-size: 16px 16px;
+      }
+   }
+
+   .ui-datepicker-prev-hover{
+      padding: 0 0 0 0;
+      cursor: pointer;
+      background-color: none;
+      border: none;
+
+      span{
+         background-image: url('../img/icon/arrow_back.svg') !important;
+         background-position: 0px 0px !important;
+         background-size: 16px 16px;
+      }
+   }
+
+}

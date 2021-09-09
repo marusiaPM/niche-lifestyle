@@ -1,0 +1,115 @@
+// HOME HEADER 
+.headerWrap{
+   width: 100%;
+   min-height: 100vh;
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+
+   display: grid;
+   grid-template-rows: max-content 1fr max-content;
+
+   .homeHeaderTextWrap{
+      grid-row: 3 / span 1;
+      .homeHeaderText{
+         display: grid;
+         grid-template-columns: 57px 1fr 57px;
+         grid-template-rows: max-content max-content;
+   
+         .headerScroll{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 2;
+            align-self: center;
+   
+            width: 57px;
+            cursor: pointer;
+   
+            @include upAndDown;
+         }
+   
+         h1{
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+      
+            @include F2400;
+            letter-spacing: 0.2em;
+            font-size: 5rem;
+            line-height: 6rem;
+            color: $wh;
+            text-align: center;
+         }
+      
+         h2{
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+      
+            @include F2400;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            color: $wh;
+            text-align: center;
+         }
+      }
+   }
+   
+
+   &--home{
+      background-image:linear-gradient(0deg, rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.6)),
+                     url('../img/backgrounds/home-background.png');
+   }
+
+   &--about{
+      background-image:linear-gradient(0deg, rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.6)),
+                     url('../img/backgrounds/about-background.png');
+   }
+
+   &--contact{
+      background-image:linear-gradient(0deg, rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.6)),
+                     url('../img/backgrounds/contact-background.png');
+   }
+
+   &--ourYacht{
+      background-image:linear-gradient(0deg, rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.6)),
+                     url('../img/backgrounds/home-background.png');
+   }
+
+   &--booking{
+      background-image:linear-gradient(0deg, rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.6)),
+                     url('../img/backgrounds/booking-background.png');
+   }
+}
+
+
+@media screen and (max-width: 800px){
+   .headerWrap{
+      .homeHeaderTextWrap{
+         .homeHeaderText{
+            display: block;
+
+            .headerScroll{
+               display: none; 
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 500px){
+   .headerWrap{
+      .homeHeaderTextWrap{
+         .homeHeaderText{
+            h1{
+               font-size: 2rem;
+               line-height: 3rem;
+            }
+
+            h2{
+               font-size: 1.125rem;
+               line-height: 1.25rem;
+            }
+         }
+      }
+   }
+}

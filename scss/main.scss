@@ -1,0 +1,41 @@
+/*---BASE FILES---*/ 
+@import 'base/reset'; // reset the document, font size to 10rem, zeroes padding and margin
+
+
+/*---ABSTRACT FILES---*/ 
+@import 'abstract/colors'; //color variables
+@import 'abstract/fontsAndText'; //font variables and text mix-ins
+@import'abstract/flex';
+@import'abstract/animations';
+@import'abstract/width';
+
+
+/*---CONTAINERS---*/ 
+@import 'containers/container';
+
+
+/*---ELEMENTS---*/
+@import 'elements/links';
+@import 'elements/forms';
+@import 'elements/lists';
+@import 'elements/datePicker';
+
+
+
+/*---LAYOUT FILES---*/
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/imageSlider';
+@import 'layout/basicSection1';
+
+
+/*---PAGES--*/
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/ourYacht';
+@import 'pages/booking';
+@import 'pages/thankYou';
+
+

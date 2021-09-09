@@ -1,0 +1,8 @@
+@mixin link1{
+   text-decoration: none;
+   @include P1;
+
+   &:hover{
+      color: $teal;
+   }
+}

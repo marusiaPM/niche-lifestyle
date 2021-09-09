@@ -1,0 +1,109 @@
+//Getting the fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+//Variables with the fonts
+$font1: 'Roboto', sans-serif;
+$font2: 'Rubik', sans-serif;
+
+
+@mixin F1400{
+   font-family: $font1;
+   font-weight: 400;
+}
+
+@mixin F1500{
+   font-family: $font1;
+   font-weight: 500;
+}
+
+@mixin F1700{
+   font-family: $font1;
+   font-weight: 700;
+}
+
+@mixin F2300{
+   font-family: $font2;
+   font-weight: 300;
+}
+
+@mixin F2400{
+   font-family: $font2;
+   font-weight: 400;
+}
+
+@mixin F2500{
+   font-family: $font2;
+   font-weight: 500;
+}
+
+@mixin F2700{
+   font-family: $font2;
+   font-weight: 700;
+}
+
+@mixin H1{
+   @include F2300;
+   font-size: 2.3rem;
+   line-height: 2.8rem;
+   letter-spacing: 0.2em;
+   color: $blk;
+   margin-bottom: 30px;
+   text-align: center;
+
+   @media screen and (max-width: 700px){
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 20px;
+   }
+}
+
+@mixin H2{
+   @include F2300;
+   font-size: 1.75rem;
+   line-height: 2.1rem;
+   letter-spacing: 0.2em;
+   color: $blk;
+   margin-bottom: 30px;
+   text-align: center;
+
+   @media screen and (max-width: 700px){
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 20px;
+   } 
+}
+
+@mixin P1{
+   @include F2300;
+   font-size: 1rem;
+   line-height: 200%;
+   color: $blk;
+
+   @media screen and (max-width: 800px){
+      font-size: 1rem;
+      line-height: 150%;
+   }
+
+   a{
+      text-decoration: none;
+      color: $blk;
+   }
+}
+
+@mixin P2{
+   @include F2300;
+   font-size: 1.12rem;
+   line-height: 200%;
+   color: $blk;
+
+   @media screen and (max-width: 800px){
+      font-size: 1rem;
+      line-height: 150%;
+   }
+
+   a{
+      text-decoration: none;
+      color: $blk;
+   }
+}
