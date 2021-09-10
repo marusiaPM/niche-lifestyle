@@ -10,7 +10,7 @@ if($_POST) {
    $location = "";
 	$message = "";
 	$email_body = "<div>";
-	$recipient = "marusia.petrova.m@gmail.com paul@theoffice.support";
+	$recipient = "marusia.petrova.m@gmail.com ";
 
    // f name 
 	if(isset($_POST['f_name'])) {
