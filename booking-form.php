@@ -10,7 +10,7 @@ if($_POST) {
    $bookingName = "";
 	$email = "";
 	$email_body = "<div>";
-	$recipient = "marusia.petrova.m@gmail.com paul@theoffice.support";
+	$recipient = "marusia.petrova.m@gmail.com ";
 
    // start date
 	if(isset($_POST['startDate'])) {
